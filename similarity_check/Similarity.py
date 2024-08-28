@@ -1,7 +1,7 @@
-class similarity:
+class Similarity:
     def __init__(self):
         return
-    def jaccard_similarity(self, str1, str2):
+    def jaccard_coefficient(self, str1, str2):
         set1=set(str1)
         set2=set(str2)
         intersection = len(set1.intersection(set2))
