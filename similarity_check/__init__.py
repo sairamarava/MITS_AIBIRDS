@@ -1,1 +1,1 @@
-import Similarity
+from similarity_check import Similarity
