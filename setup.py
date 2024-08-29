@@ -32,4 +32,5 @@ setuptools.setup(
         'Intended Audience :: Science/Research'
     ],
     python_requires='>=3.5',
+    html_theme = 'sphinx_rtd_theme'
 )
