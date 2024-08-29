@@ -38,9 +38,9 @@ class Similarity:
                 Parameters
                 ----------
                 str1 : iterable
-                    The first iterable, which will be converted to a set.
+                    The first string, which will be converted to a set.
                 str2 : iterable
-                    The second iterable, which will be converted to a set.
+                    The second string, which will be converted to a set.
 
                 Returns
                 -------
@@ -62,9 +62,9 @@ class Similarity:
         Parameters
         ----------
         str1 : iterable
-            The first iterable, which will be converted to a set.
+            The first string, which will be converted to a set.
         str2 : iterable
-            The second iterable, which will be converted to a set.
+            The second string, which will be converted to a set.
 
         Returns
         -------
