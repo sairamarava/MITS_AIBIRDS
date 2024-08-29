@@ -23,7 +23,7 @@ After installing the package
 2. Use this variable_name: <br>
 Create an object as obj=variable_name.Similarity()
 3. Now, you can use this obj to implement anyone of the following functions:
-    jaccard_coefficient
-    hamming_distance
-    overlap_coefficient
+    <br>jaccard_coefficient
+    <br>hamming_distance
+    <br>overlap_coefficient
 
