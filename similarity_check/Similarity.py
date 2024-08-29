@@ -3,22 +3,22 @@ from sympy.codegen.cnodes import union
 
 class Similarity:
     """
-    A class to calculate various similarity coefficients between two sets or string
+    The class provides various similarity and dissimilarity methods including jaccard_coefficient,overlap_coefficient and hamming_distance
     Attributes:
     ----------
         str1 :str
-            The first attribute for comparison. This can be any iterable that will be converted into a set.
+            The first attribute for comparison. This can be any string that will be converted into a set.
         str2 :str
-            The second attribute for comparison. This can be any iterable that will be converted into a set.
+            The second attribute for comparison. This can be any string that will be converted into a set.
      Methods
     -------
-     jaccard_coefficient(self, str1, str2)
+     jaccard_coefficient( str1, str2)
         Calculates the Jaccard similarity coefficient between two sets.
 
-    overlap_coefficient(self, str1, str2)
-        Calculates the Overlap coefficient between two sets.
+    overlap_coefficient(str1, str2)
+        Calculates the Overlap coefficient between two  sets.
 
-    hamming_distance(self, str1, str2)
+    hamming_distance(str1, str2)
         Calculates the Hamming distance between two strings.
 
     """
@@ -37,9 +37,9 @@ class Similarity:
 
                 Parameters
                 ----------
-                str1 : iterable
+                str1 : str
                     The first string, which will be converted to a set.
-                str2 : iterable
+                str2 : str
                     The second string, which will be converted to a set.
 
                 Returns
@@ -61,9 +61,9 @@ class Similarity:
 
         Parameters
         ----------
-        str1 : iterable
+        str1 : str
             The first string, which will be converted to a set.
-        str2 : iterable
+        str2 : str
             The second string, which will be converted to a set.
 
         Returns
@@ -89,16 +89,16 @@ class Similarity:
                 str1 : str
                     The first string for comparison.
                 str2 : str
-                    The second string for comparison.
+                   The second string for comparison.
 
                 Returns
                 -------
                 int
-                    The Hamming distance between the two strings.
-                    Returns -1 if the strings have different lengths.
+                    The Hamming distance between the two strings.Returns -1 if the strings have different lengths.
         """
         if len(str1) != len(str2):
             return -1
         distance = sum(el1 != el2 for el1, el2 in zip(str1, str2))
         return distance
     help(hamming_distance)
+
