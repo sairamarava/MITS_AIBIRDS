@@ -6,8 +6,8 @@ MITS_AIBIRDS is a repository for SIMS (Similarity Score)Python package that prov
 
 ## Features
 
-- **Jaccard Similarity**: Measures the similarity between two sets by dividing the size of the intersection by the size of the union.
-- **Overlap Similarity**: Calculates the overlap between two sets by dividing the size of the intersection by the size of the smaller set.
+- **Jaccard Coefficient**: Measures the similarity between two sets by dividing the size of the intersection by the size of the union.
+- **Overlap Coefficient**: Calculates the overlap between two sets by dividing the size of the intersection by the size of the smaller set.
 - **Hamming Distance**: Measures the number of positions at which the corresponding elements are different between two strings of equal length.
 
 ## Installation
@@ -16,3 +16,14 @@ You can install the package using pip:
 
 ```bash
 pip install simscore
+```
+# How to Use
+After installing the package
+1. import similarity_check.Similarity as variable_name
+2. Use this variable_name: <br>
+Create an object as obj=variable_name.Similarity()
+3. Now, you can use this obj to implement anyone of the following functions:
+    jaccard_coefficient
+    hamming_distance
+    overlap_coefficient
+
