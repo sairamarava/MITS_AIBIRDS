@@ -1,4 +1,3 @@
-from sympy.codegen.cnodes import union
 
 
 class Similarity:
