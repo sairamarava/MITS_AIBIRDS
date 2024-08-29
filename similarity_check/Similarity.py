@@ -3,8 +3,7 @@ from sympy.codegen.cnodes import union
 
 class Similarity:
     """
-
-     Class provides methods for calculating similarity and dissimilarity measures ,including the jaccardcoefficient,overlapcoefficient,and hamming distance.
+    A class to calculate various similarity coefficients between two sets or string
     Attributes:
     ----------
         str1 :str
@@ -13,13 +12,13 @@ class Similarity:
             The second attribute for comparison. This can be any iterable that will be converted into a set.
      Methods
     -------
-     jaccard_coefficient(str1, str2)
-        Calculates the Jaccard similarity coefficient between two strings.
+     jaccard_coefficient(self, str1, str2)
+        Calculates the Jaccard similarity coefficient between two sets.
 
-    overlap_coefficient(str1, str2)
-        Calculates the Overlap coefficient between two strings.
+    overlap_coefficient(self, str1, str2)
+        Calculates the Overlap coefficient between two sets.
 
-    hamming_distance(str1, str2)
+    hamming_distance(self, str1, str2)
         Calculates the Hamming distance between two strings.
 
     """
@@ -27,13 +26,6 @@ class Similarity:
     def __init__(self):
         """
               Initializes the Similarity object.
-              Parameters
-              ----------
-                None
-               Returns
-               -------
-                None
-
         """
         return
     def jaccard_coefficient(self, str1, str2):
@@ -45,15 +37,15 @@ class Similarity:
 
                 Parameters
                 ----------
-                str1 : str
-                    The first string, which will be converted to a set.
-                str2 : str
-                    The second string, which will be converted to a set.
+                str1 : iterable
+                    The first iterable, which will be converted to a set.
+                str2 : iterable
+                    The second iterable, which will be converted to a set.
 
                 Returns
                 -------
                 float
-                    Returns 0 if both sets are empty .where 0 indicates no similarity and 1 indicates complete similarity
+                    The Jaccard similarity coefficient. Returns 0 if both sets are empty
        """
         set1=set(str1)
         set2=set(str2)
@@ -69,10 +61,10 @@ class Similarity:
 
         Parameters
         ----------
-        str1 : str
-            The first string, which will be converted to a set.
-        str2 : str
-            The second string, which will be converted to a set.
+        str1 : iterable
+            The first iterable, which will be converted to a set.
+        str2 : iterable
+            The second iterable, which will be converted to a set.
 
         Returns
         -------
@@ -102,7 +94,8 @@ class Similarity:
                 Returns
                 -------
                 int
-                    The Hamming distance between the two strings.Returns -1 if the strings have different lengths.
+                    The Hamming distance between the two strings.
+                    Returns -1 if the strings have different lengths.
         """
         if len(str1) != len(str2):
             return -1
