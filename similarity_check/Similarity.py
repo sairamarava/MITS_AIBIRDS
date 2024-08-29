@@ -2,7 +2,7 @@
 
 class Similarity:
     """
-    The class provides various similarity and dissimilarity methods including jaccard_coefficient,overlap_coefficient and hamming_distance.
+    The class provides various similarity and dissimilarity methods including jaccard_coefficient,overlap_coefficient and hamming_distance
     Attributes:
     ----------
         str1 :str
@@ -25,13 +25,6 @@ class Similarity:
     def __init__(self):
         """
               Initializes the Similarity object.
-              Parameters
-              ----------
-                 None
-              Returns
-              -------
-                 None
-
         """
         return
     def jaccard_coefficient(self, str1, str2):
