@@ -1,5 +1,6 @@
 # MITS_AIBIRDS
 [![GitHub license](https://img.shields.io/github/license/UdayLab/PAMI)](https://github.com/UdayLab/PAMI/blob/main/LICENSE)
+[![Documentation Status](https://readthedocs.org/projects/mits-aibirds/badge/?version=latest)](https://mits-aibirds.readthedocs.io/en/latest/?badge=latest)
 
 MITS_AIBIRDS is a repository for SIMS (Similarity Score)Python package that provides easy-to-use functions for calculating various similarity scores, including Jaccard, Overlap, and Hamming Distance. These scores can be useful in a wide range of applications, such as text analysis, bioinformatics, and data science.
 
