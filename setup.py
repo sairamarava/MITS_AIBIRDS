@@ -6,7 +6,7 @@ with open('README.md', 'r') as fh:
 setuptools.setup(
     name='simscore',
     version='28.08.001',
-    author='Sai Ram Reddy Shabeena Kamuluri Tejashri Kothapalli',
+    author='Sai Ram Reddy Shabeena Kamuluri Tejasree Kothapalli',
     author_email='sairamrdya@gmail.com',
     description='This software is being developed at the Madanapalle Institute of Technology & Science.',
     long_description=long_description,

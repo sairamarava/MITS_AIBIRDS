@@ -25,6 +25,14 @@ class Similarity:
     def __init__(self):
         """
               Initializes the Similarity object.
+               Parameters
+                ----------
+                None
+
+               Return
+                ---------
+                None
+                
         """
         return
     def jaccard_coefficient(self, str1, str2):
