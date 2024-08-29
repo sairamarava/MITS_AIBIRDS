@@ -13,4 +13,4 @@ MITS_AIBIRDS is a repository for SIMS (Similarity Score)Python package that prov
 You can install the package using pip:
 
 ```bash
-pip install mits_aibirds
+pip install simscore
